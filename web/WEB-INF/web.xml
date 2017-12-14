@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" >
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+<!--已开课程-->
+    <servlet>
+        <servlet-name>OpenedCourse</servlet-name>
+        <servlet-class>servlet.OpenedCourse</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OpenedCourse</servlet-name>
+        <url-pattern>/OpenedCourse</url-pattern>
+    </servlet-mapping>
+<!--个人信息-->
+    <servlet>
+        <servlet-name>PersonalMsg</servlet-name>
+        <servlet-class>servlet.PersonalMsg</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PersonalMsg</servlet-name>
+        <url-pattern>/personalMsg</url-pattern>
+    </servlet-mapping>
+<!--班级成员-->
+    <servlet>
+        <servlet-name>ClassMember</servlet-name>
+        <servlet-class>servlet.ClassInformation</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ClassMember</servlet-name>
+        <url-pattern>/classMember</url-pattern>
+    </servlet-mapping>
+
+</web-app>
